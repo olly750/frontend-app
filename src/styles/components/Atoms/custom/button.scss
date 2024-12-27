@@ -1,0 +1,47 @@
+button {
+  box-sizing: content-box;
+
+  &.with-width {
+    min-width: 6.25rem;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
+}
+
+//styles to add a tooltip on a button
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 110%;
+}
+
+// .tooltip .tooltiptext::after {
+//   content: '';
+//   position: absolute;
+//   top: 50%;
+//   right: 100%;
+//   margin-top: -46.5px;
+//   border-width: 5px;
+//   border-style: solid;
+//   border-color: transparent black transparent transparent;
+// }
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

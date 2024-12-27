@@ -1,0 +1,11 @@
+.normal-button {
+  @apply border-2 border-gray-400;
+}
+
+.right-button {
+  @apply border-2 border-green-500 bg-green-500;
+}
+
+.wrong-button {
+  @apply border-2 border-red-500  bg-red-500;
+}

@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+.idea
+dist
+dist-ssr
+*.local
+*.log
+todo.*
+
+*try/
+
+/.yarn/*
+!/.yarn/plugins
+!/.yarn/releases

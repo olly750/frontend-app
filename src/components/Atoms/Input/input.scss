@@ -1,0 +1,13 @@
+input,
+textarea,
+textareaca::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  @apply border-primary-500;
+}
+.w-24 {
+  width: 6rem;
+}

@@ -1,0 +1,18 @@
+#editor-menubar{
+    
+    button{
+        @apply  rounded mr-1;
+        &:hover{
+            @apply bg-tertiary;
+        }
+        
+        &.is-active{
+            @apply bg-tertiary;
+    
+        }
+    }
+
+    .ProseMirror{
+        @apply px-4 outline-none;
+    }
+}

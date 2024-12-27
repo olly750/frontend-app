@@ -1,0 +1,93 @@
+@import 'css2.css';
+
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+* {
+  font-family: 'Inter', sans-serif;
+  @apply to-txt-primary;
+}
+.editor-no-border {
+  border: none;
+}
+
+body,
+html {
+  @apply bg-secondary;
+}
+.border-b-3 {
+  border-bottom-width: 3px;
+}
+
+//a class that disables copy of text
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.css-1rhbuit-multiValue {
+  background: #ffffff !important;
+  border-radius: 25px !important;
+  padding: 5px 15px !important;
+  align-items: center !important;
+}
+
+.css-1okebmr-indicatorSeparator {
+  display: none !important;
+}
+
+.css-xb97g8 {
+  width: 20px;
+  height: 20px;
+  border-radius: 30% !important;
+  background-color: #97a0a8 !important;
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+
+.css-xb97g8:hover {
+  background-color: #646a6e !important;
+}
+
+.css-xb97g8 svg {
+  fill: red !important;
+}
+
+// scrollbar
+
+::-webkit-scrollbar {
+  width: 6px;
+  max-height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+  max-height: 20px;
+}
+
+.bg-left-2 {
+  background-position: 40px;
+}
+
+// remove background color from chrome autofill
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

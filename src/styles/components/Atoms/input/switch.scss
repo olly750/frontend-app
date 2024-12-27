@@ -1,0 +1,43 @@
+$primary: #105e55;
+$secondary: #fafbfc;
+
+.my-switch {
+  // height: 1.6rem;
+  // width: 5rem;
+  .holder {
+    width: fit-content;
+    height: fit-content;
+    .switch-holder {
+      background-color: darken($secondary, 10);
+      cursor: pointer;
+      width: 2.5rem;
+      height: 1.5rem;
+      border-radius: 75px;
+      position: relative;
+      transition: 0.3s ease-out;
+      .circle {
+        height: 1rem;
+        width: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: white;
+        border-radius: 75px;
+        transition: 0.3s ease-out;
+        position: absolute;
+        padding: 0;
+      }
+      &.active {
+        background-color: lighten($primary, 15);
+        .circle {
+          box-shadow: 0 0 20px #6daefc00;
+        }
+      }
+      .right {
+        left: calc(100% - 20px);
+      }
+      .left {
+        left: 2px;
+      }
+    }
+  }
+}

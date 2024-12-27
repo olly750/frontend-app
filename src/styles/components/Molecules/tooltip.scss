@@ -1,0 +1,31 @@
+
+.tooltip-card{
+    width: fit-content;
+    .trigger-holder{
+        width:fit-content;
+    }
+}
+
+.tooltip-card-content {
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: fit-content;
+    padding: 1.5rem;
+  }
+  .tooltip-card-arrow {
+    background: none;
+    @apply shadow;
+  }
+  [role='tooltip'].tooltip-card-content {
+    width: fit-content;
+    height: fit-content;
+    min-height: 2rem;
+    @apply shadow;
+  }
+  
+  .tooltip-card-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  [data-tooltip-card='tooltip'].tooltip-card-overlay {
+    background: transparent;
+  }

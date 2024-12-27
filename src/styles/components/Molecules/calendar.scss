@@ -1,0 +1,22 @@
+.rbc-header{
+   padding-top:20px;
+   height:80px;
+   border-bottom: none !important;
+}
+.rbc-event{
+    padding: 0 !important;
+}
+.rbc-event{
+    @apply bg-primary-500;
+    border: none !important;
+    border-radius: 5px 3px 3px 5px ;
+    padding:8px 4px !important;
+}
+
+.rbc-timeslot-group{
+    min-height: 72px !important;
+    height: auto !important;
+}
+.rbc-toolbar{
+    display: none !important;
+}

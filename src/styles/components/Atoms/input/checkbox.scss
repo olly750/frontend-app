@@ -1,0 +1,18 @@
+.check-box{
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    cursor: pointer;
+}
+
+.check-box{
+    border: 3px solid #9BA9B8;
+    border-radius: 5px;
+}
+
+.check-box:checked{
+    @apply bg-primary-500;
+    @apply border-primary-500;
+    background-image: url('/icons/check.svg');
+    background-position: center;
+}
